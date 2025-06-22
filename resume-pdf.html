@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracy Gius - Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: white;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            font-size: 1.2rem;
+            color: #2563eb;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: #4b5563;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .job {
+            margin-bottom: 25px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+        
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        
+        .company {
+            font-weight: 500;
+            color: #2563eb;
+        }
+        
+        .duration {
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+        
+        .job-description {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .job-description li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 5px;
+            color: #374151;
+            font-size: 0.95rem;
+        }
+        
+        .job-description li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+            font-weight: bold;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-category {
+            margin-bottom: 20px;
+        }
+        
+        .skill-category-title {
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .skill-tag {
+            background: #f3f4f6;
+            color: #1f2937;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid #d1d5db;
+        }
+        
+        .education-item {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+        
+        .education-content h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 5px;
+        }
+        
+        .education-content p {
+            color: #4b5563;
+            font-size: 0.9rem;
+            margin-bottom: 3px;
+        }
+        
+        .institution {
+            color: #2563eb;
+            font-weight: 500;
+        }
+        
+        .summary {
+            margin-bottom: 30px;
+            color: #374151;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        
+        @media print {
+            body {
+                padding: 20px;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+            
+            .job {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="name">TRACY GIUS</h1>
+        <p class="title">SENIOR SOFTWARE ENGINEER | SOFTWARE ENGINEERING LEADER</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span>📧</span>
+                <span>tldavies87@gmail.com</span>
+            </div>
+            <div class="contact-item">
+                <span>📱</span>
+                <span>310-529-6806</span>
+            </div>
+            <div class="contact-item">
+                <span>📍</span>
+                <span>Seattle, WA</span>
+            </div>
+            <div class="contact-item">
+                <span>🔗</span>
+                <span>linkedin.com/in/daviestracy</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="summary">Experienced senior software engineer with expertise in designing, developing, and deploying scalable applications and systems. Adept at leading cross-functional teams, optimizing software performance, and implementing innovative solutions to meet business objectives. Skilled in leveraging modern technologies to drive efficiency and deliver high-quality results.</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3 class="skill-category-title">Languages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Go</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Bash</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Ruby</span>
+                    <span class="skill-tag">Python</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-category-title">Libraries/Tools</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Azure DevOps</span>
+                    <span class="skill-tag">Azure</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Kusto Query Language</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-category-title">Other</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Agile Trained</span>
+                    <span class="skill-tag">Linux</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Experience</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Senior Software Engineer</div>
+                    <div class="company">Microsoft, Seattle, WA</div>
+                </div>
+                <div class="duration">April 2017 – December 2024</div>
+            </div>
+            <div style="margin-bottom: 10px; color: #6b7280; font-size: 0.9rem;">Viva Engage Engineering Systems Team</div>
+            <ul class="job-description">
+                <li>Served as team scrum master. Run retrospective and planning meetings. Implemented support for language/SDK version updates in build infrastructure. Java version updates, Switching JDK implementations, Node version updates.</li>
+                <li>Maintained and created Docker Images used by build and release infrastructure. Wrote and evaluated quarterly team objectives in conjunction with leadership's business objectives.</li>
+                <li>Guided migration from monolithic Node repository from Lerna to Rush. Ensured that migration was compatible with their build infrastructure.</li>
+                <li>Provided instructions for teams to integrate their build with a caching storage backend. Identified pipeline improvements to increase cache hit rate, further improving build and test times.</li>
+                <li>Extracted metrics from raw Api and Unit tests output. Displayed those metrics in Grafana dashboards for teams to better understand their tests metrics over time.</li>
+                <li>Created and managed templated continuous-integration and continuous-delivery pipelines including their policies, builds and deploys of 100+ Dockerized services (Node, Java, Ruby, Python, Go).</li>
+                <li>Convert build pipelines from UI configured to YAML managed pipelines, allowing CI infrastructure changes to be reviewed and committed like any other code.</li>
+                <li>Evaluate, streamline and optimize release chains. Combine disjoint releases with tight coupling into explicitly linked stages, reducing confusion and release conflicts.</li>
+                <li>Built Hotfix/master release triggers for prBased pipelines.</li>
+                <li>Created Pipeline base configurations for projects to adopt, decreasing project complexity and spin-up time. Templates included standard features like test execution and reporting on code coverage and linting.</li>
+                <li>Converted projects to continuous integration using pull requests to test and merge. Reduce cases of broken development and release branches.</li>
+                <li>Created/maintained Power BI/Kusto queries and reports on quarterly/monthly reliability and velocity metrics.</li>
+                <li>Supported teams to speed up their builds, add tests, lints and other pr branch policies. Encourage teams to learn tools for self-support of regular tasks to improve team velocity.</li>
+                <li>Automated on-call tasks related to deployment exclusion blocks. Add monitoring to notify on calls of potential problems.</li>
+                <li>Migrated legacy devops systems (Team city, Travis, Jira, etc.) into Azure Devops and Azure. Clearly communicated benefits to teams.</li>
+                <li>Run team bi-weekly brown bag sessions on domain knowledge for the team.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Quality Software Engineer</div>
+                    <div class="company">Dell EMC, Seattle, WA</div>
+                </div>
+                <div class="duration">March 2015 - March 2017</div>
+            </div>
+            <ul class="job-description">
+                <li>Open Source Project Rack HD - Platform agnostic management and orchestration of physical hardware.</li>
+                <li>SCRUM Master for multiple teams in diverse locations.</li>
+                <li>Helped team see features in terms of user experience.</li>
+                <li>Helped team with costing to ensure reliable scheduling.</li>
+                <li>Work with Product Owner to ensure correct prioritization of features.</li>
+                <li>Presented Agile practices and benefits to traditional Waterfall teams.</li>
+                <li>Maintain and manage Continuous Integration Test Servers.</li>
+                <li>Integration with Jenkins and Travis CI.</li>
+                <li>Testing, Code Quality Linting and Test Coverage.</li>
+                <li>Review internal and external contributions to code.</li>
+                <li>Triage bug reports from internal and external customers.</li>
+                <li>Developed code quality standards and drove adoption of high quality review practices.</li>
+                <li>Refactored existing code to increase ease of testability and improve test coverage.</li>
+                <li>Implement new features as required.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Software Engineer</div>
+                    <div class="company">Renasar Technologies (acquired by Dell EMC), Seattle, WA</div>
+                </div>
+                <div class="duration">August 2014 - March 2015</div>
+            </div>
+            <ul class="job-description">
+                <li>Responsible for QA efforts of Renasar's converged infrastructure platform.</li>
+                <li>Extensive manual and automated integration testing of the backend server and User Interface.</li>
+                <li>Execution and reporting of regression suites.</li>
+                <li>Owned the company's Jenkin's based continuous integration system.</li>
+                <li>Provided feedback on development designs testability.</li>
+                <li>Reported on code coverage and enhanced suites where needed.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Additional Experience</h2>
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Data Solution Software Intern</div>
+                    <div class="company">The Walt Disney Company, Seattle, WA</div>
+                </div>
+                <div class="duration"></div>
+            </div>
+        </div>
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Master of Software Engineering Student</div>
+                    <div class="company">Seattle University & Astronics, Seattle, WA</div>
+                </div>
+                <div class="duration"></div>
+            </div>
+        </div>
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Sensing and Utility Systems Engineering Intern</div>
+                    <div class="company">Crane Aerospace and Electronics, Lynnwood, WA</div>
+                </div>
+                <div class="duration"></div>
+            </div>
+        </div>
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Embedded Software Engineer I</div>
+                    <div class="company">Northrop Grumman, Aerospace System, San Diego, CA</div>
+                </div>
+                <div class="duration"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+            <div class="education-content">
+                <h3>Master of Software Engineering (MSSE)</h3>
+                <p class="institution">Seattle University, Seattle, WA</p>
+                <p class="graduation-year">Emphasis: Software Project Planning/Management</p>
+            </div>
+        </div>
+        <div class="education-item">
+            <div class="education-content">
+                <h3>Bachelor of Science (BS), Software Engineering</h3>
+                <p class="institution">California Polytechnic State University, San Luis Obispo, CA</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Organizations</h2>
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Co-Founder - Past President</div>
+                    <div class="company">Women Involved in Software and Hardware (WISH)</div>
+                </div>
+                <div class="duration">Alumni</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
